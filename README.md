@@ -17,6 +17,9 @@ Have an awesome idea?
 
 We will provide a quick analysis and free proposal for it. Don’t worry, it is secure and confidential.
 
+Check it out on Dribbble (https://dribbble.com/shots/5727828-Audio-Book-Dark-Version)
+
+
 # LICENSE!
 
 AudioBook is [MIT-licensed](https://git.mindinventory.com/react-native/samples/audiobookui/blob/master/LICENSE).
