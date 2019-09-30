@@ -18,7 +18,7 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-        // fet the data
+        // fetch the data
         this.props.fetchAllUserListAction()
     }
 
