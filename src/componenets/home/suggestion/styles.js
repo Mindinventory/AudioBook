@@ -4,8 +4,7 @@ import Colors from "../../../helpers/Colors";
 const styles = StyleSheet.create({
     suggestionListItem: {
         marginVertical: 14,
-        marginHorizontal: 10,
-        paddingVertical: 10,
+        paddingVertical: 12,
         justifyContent: 'space-between',
         borderRadius: 6,
         backgroundColor: 'rgba(55, 55, 55, 1)',
@@ -17,16 +16,21 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: Colors.white,
         alignSelf: 'flex-start',
+        marginLeft: 20,
+        paddingRight: 10
     },
     description: {
         fontSize: 16,
         color: Colors.white,
         alignSelf: 'flex-start',
+        marginLeft: 20,
+        paddingRight: 10
     },
     ratingContainer: {
         flexDirection: 'row',
         alignSelf: 'flex-start',
-        height: 26
+        height: 26,
+        marginLeft: 20
     },
     rating: {
         marginHorizontal: 2,
@@ -48,7 +52,8 @@ const styles = StyleSheet.create({
         top: 0,
         width: '35%',
         height: 190,
-        left: 10
+        left: 10,
+        bottom: 10
     },
 });
 

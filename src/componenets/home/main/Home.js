@@ -10,6 +10,7 @@ import getUserList from '../../../redux/selectors/UserSelectors'
 import {searchedUserAction, fetchAllUserListAction} from "../../../redux/actions/UserActions";
 import Ripple from "../../../helpers/Ripple";
 import strings from "../../../localization/en";
+import Colors from '../../../helpers/Colors'
 
 class Home extends React.Component {
 
@@ -28,6 +29,15 @@ class Home extends React.Component {
     redirectToDetail = () => {
         this.props.navigation.navigate("SuggestionDetails")
     };
+
+    renderTrendingSeparator = ({item, index}) => {
+        return (
+            <View style={[{
+                backgroundColor: Colors.blue,
+                flex: 1
+            }, index % 2 == 0 ? {marginRight: 10} : {marginLeft: 10}]}/>
+        )
+    }
 
     render() {
         return (
@@ -67,21 +77,21 @@ class Home extends React.Component {
                                 </Text>
                             </Ripple>
                         </View>
-                        <View
-                            style={styles.listing}>
-                            <FlatList
-                                horizontal
-                                data={this.props.userList.trendingStoryList}
-                                showsHorizontalScrollIndicator={false}
-                                renderItem={(item, position) => <TrendingStoriesComponent
-                                    data={{item, position}}
-                                    onPress={() => {
-                                        this.redirectToDetail()
-                                    }}
-                                />}
-                                keyExtractor={(item, index) => index.toString()}
-                            />
-                        </View>
+                        <FlatList
+                            horizontal
+                            data={this.props.userList.trendingStoryList}
+                            showsHorizontalScrollIndicator={false}
+                            contentContainerStyle={styles.trendingList}
+                            renderItem={(item, position) => <TrendingStoriesComponent
+                                data={{item, position}}
+                                onPress={() => {
+                                    this.redirectToDetail()
+                                }}
+
+                            />}
+                            keyExtractor={(item, index) => index.toString()}
+                            ItemSeparatorComponent={() => <View style={{width: 16, backgroundColor: Colors.black}}/>}
+                        />
                         <View
                             style={styles.trendingContainer}>
                             <Text
@@ -97,20 +107,18 @@ class Home extends React.Component {
                                 </Text>
                             </Ripple>
                         </View>
-                        <View
-                            style={styles.listing}>
-                            <FlatList
-                                data={this.props.userList.yourLikesList}
-                                showsVerticalScrollIndicator={false}
-                                renderItem={(item, position) => <SuggestionComponent
-                                    data={{item, position}}
-                                    onPress={() => {
-                                        this.redirectToDetail()
-                                    }}
-                                />}
-                                keyExtractor={(item, index) => index.toString()}
-                            />
-                        </View>
+                        <FlatList
+                            data={this.props.userList.yourLikesList}
+                            showsVerticalScrollIndicator={false}
+                            contentContainerStyle={styles.yourLikesList}
+                            renderItem={(item, position) => <SuggestionComponent
+                                data={{item, position}}
+                                onPress={() => {
+                                    this.redirectToDetail()
+                                }}
+                            />}
+                            keyExtractor={(item, index) => index.toString()}
+                        />
                     </ScrollView>
                 </SafeAreaView>
             </Fragment>

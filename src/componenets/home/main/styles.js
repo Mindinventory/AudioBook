@@ -64,8 +64,11 @@ const styles = StyleSheet.create({
         fontSize: 13,
         color: Colors.white,
     },
-    listing: {
-        paddingLeft: 16
+    yourLikesList: {
+        paddingHorizontal: 16,
+    },
+    trendingList: {
+        paddingHorizontal: 16,
     },
 });
 

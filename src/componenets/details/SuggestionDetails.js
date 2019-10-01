@@ -40,7 +40,7 @@ export default class SuggestionDetails extends React.Component {
                             <Image
                                 style={styles.image}
                                 resizeMode={'cover'}
-                                source={Icons.music}
+                                source={Icons.dummy1}
                             />
                             <View>
                                 <Text

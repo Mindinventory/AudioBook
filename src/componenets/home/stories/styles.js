@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 16,
         color: Colors.white,
+        marginTop: 10
     },
     content: {
         fontSize: 14,

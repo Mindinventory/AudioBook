@@ -14,7 +14,7 @@ export const TrendingStoriesComponent = (props) => {
             <Image
                 style={styles.image}
                 resizeMode={'cover'}
-                source={Icons.music}
+                source={props.data.item.item.photo}
             />
             <Text
                 style={styles.title}

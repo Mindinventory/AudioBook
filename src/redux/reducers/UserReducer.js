@@ -1,7 +1,7 @@
 import {actionTypes} from '../actions/UserActions';
 
-import trendingStoryList from '../../helpers/jsons/TrendingStory.json'
-import yourLikesList from '../../helpers/jsons/YourLikes.json'
+import trendingStoryList from '../../helpers/jsons/TrendingStory'
+import yourLikesList from '../../helpers/jsons/YourLikes'
 
 const initialState = {
     trendingStoryList: trendingStoryList,
