@@ -15,15 +15,7 @@
 This is the UI for the Audio Book Application (DARK VERSION).
 In this You can directly Know about the Author and about the Book Content.
 
-JUST LISTEN! & ENJOY!
-
-Hope you all like it!!!!!!
-
-Have an awesome idea? 
-
-We will provide a quick analysis and free proposal for it. Don’t worry, it is secure and confidential.
-
-Check it out on Dribbble (https://dribbble.com/shots/5727828-Audio-Book-Dark-Version)
+Check it out on [Dribbble](https://dribbble.com/shots/5727828-Audio-Book-Dark-Version)
 
 ## LICENSE!
 AudioBook is [MIT-licensed](/LICENSE).
