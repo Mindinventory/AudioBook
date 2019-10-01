@@ -26,7 +26,7 @@ We will provide a quick analysis and free proposal for it. Don’t worry, it is 
 Check it out on Dribbble (https://dribbble.com/mindinventory/)
 
 ## LICENSE!
-AudioBook is [MIT-licensed](https://git.mindinventory.com/react-native/samples/audiobookui/blob/master/LICENSE).
+AudioBook is [MIT-licensed](/blob/master/LICENSE).
 
 ## Let us know!
 We’d be really happy if you send us links to your projects where you use our component. Just send an email to sales@mindinventory.com And do let us know if you have any questions or suggestion regarding our work.
