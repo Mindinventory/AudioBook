@@ -2,7 +2,7 @@
 
 | Home                        | Detail                      |
 | --------------------------- | --------------------------- |
-| ![image](/media/Home.png)   | ![image](/media/Detail.png) | 
+| ![image](/media/Home.jpg)   | ![image](/media/Details.jpg) | 
 
 ## What's in the AudioBook?
 - Managable React Native project structure
