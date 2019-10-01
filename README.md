@@ -1,4 +1,4 @@
-# AudioBook
+# AudioBook UI
 
 | Home                        | Detail                      |
 | --------------------------- | --------------------------- |
@@ -23,7 +23,7 @@ Have an awesome idea?
 
 We will provide a quick analysis and free proposal for it. Don’t worry, it is secure and confidential.
 
-Check it out on Dribbble (https://dribbble.com/mindinventory/)
+Check it out on Dribbble (https://dribbble.com/shots/5727828-Audio-Book-Dark-Version)
 
 ## LICENSE!
 AudioBook is [MIT-licensed](/blob/master/LICENSE).
