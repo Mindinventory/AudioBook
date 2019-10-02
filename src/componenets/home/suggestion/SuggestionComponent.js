@@ -52,7 +52,7 @@ export const SuggestionComponent = (props) => {
                 </View>
             </Ripple>
             <View style={styles.image}>
-                <Transition appear="vertical">
+                <Transition shared="logo">
                     <Image
                         resizeMode={'cover'}
                         source={props.data.item.item.photo}

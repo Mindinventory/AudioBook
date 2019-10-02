@@ -39,7 +39,7 @@ export default class SuggestionDetails extends React.Component {
                         <View
                             style={styles.scroll}>
                             <View  style={styles.image}>
-                                <Transition appear="vertical">
+                                <Transition shared="logo">
                                     <Image
                                         resizeMode={'cover'}
                                         source={Icons.dummy1}
