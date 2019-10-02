@@ -6,6 +6,7 @@ import StarRating from "react-native-star-rating";
 import strings from '../../localization/en';
 import Header from "../generic/Header";
 import Ripple from "../../helpers/Ripple";
+import { FluidNavigator, Transition } from 'react-navigation-fluid-transitions';
 
 export default class SuggestionDetails extends React.Component {
 
@@ -37,11 +38,14 @@ export default class SuggestionDetails extends React.Component {
                     <View>
                         <View
                             style={styles.scroll}>
-                            <Image
-                                style={styles.image}
-                                resizeMode={'cover'}
-                                source={Icons.dummy1}
-                            />
+                            <View  style={styles.image}>
+                                <Transition appear="vertical">
+                                    <Image
+                                        resizeMode={'cover'}
+                                        source={Icons.dummy1}
+                                    />
+                                </Transition>
+                            </View>
                             <View>
                                 <Text
                                     style={styles.suggestionName}>

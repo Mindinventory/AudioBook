@@ -12,6 +12,7 @@ import Ripple from "../../../helpers/Ripple";
 import strings from "../../../localization/en";
 import Colors from '../../../helpers/Colors'
 
+
 class Home extends React.Component {
 
     constructor(props) {
