@@ -1,9 +1,10 @@
 import React from "react";
-import {Image, Text} from "react-native";
+import {Image, Text, TouchableOpacity, View} from "react-native";
 import styles from "./styles";
 import PropTypes from "prop-types";
 import Icons from "../../../helpers/Icons";
 import Ripple from "../../../helpers/Ripple";
+import {Transition} from "react-navigation-fluid-transitions";
 
 export const TrendingStoriesComponent = (props) => {
     return (
@@ -11,11 +12,15 @@ export const TrendingStoriesComponent = (props) => {
             onPress={() => {
                 props.onPress && props.onPress()
             }}>
-            <Image
-                style={styles.image}
-                resizeMode={'cover'}
-                source={props.data.item.item.photo}
-            />
+            <View>
+                <Transition shared={`imageTrending${props.data.item.index}`}>
+                    <Image
+                        style={styles.image}
+                        resizeMode={'cover'}
+                        source={props.data.item.item.photo}
+                    />
+                </Transition>
+            </View>
             <Text
                 style={styles.title}
                 numberOfLines={1}>

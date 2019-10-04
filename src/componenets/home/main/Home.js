@@ -12,12 +12,7 @@ import Ripple from "../../../helpers/Ripple";
 import strings from "../../../localization/en";
 import Colors from '../../../helpers/Colors'
 
-
 class Home extends React.Component {
-
-    constructor(props) {
-        super(props);
-    }
 
     componentDidMount() {
         // fetch the data
@@ -27,20 +22,12 @@ class Home extends React.Component {
     /**
      * Redirect to detail section.
      */
-    redirectToDetail = () => {
-        this.props.navigation.navigate("SuggestionDetails")
+    redirectToDetail = (item,from) => {
+        this.props.navigation.navigate("SuggestionDetails",{item,from})
     };
 
-    renderTrendingSeparator = ({item, index}) => {
-        return (
-            <View style={[{
-                backgroundColor: Colors.blue,
-                flex: 1
-            }, index % 2 == 0 ? {marginRight: 10} : {marginLeft: 10}]}/>
-        )
-    }
-
     render() {
+
         return (
             <Fragment>
                 <SafeAreaView style={styles.container}>
@@ -86,7 +73,7 @@ class Home extends React.Component {
                             renderItem={(item, position) => <TrendingStoriesComponent
                                 data={{item, position}}
                                 onPress={() => {
-                                    this.redirectToDetail()
+                                    this.redirectToDetail(item,'Trending')
                                 }}
 
                             />}
@@ -114,8 +101,9 @@ class Home extends React.Component {
                             contentContainerStyle={styles.yourLikesList}
                             renderItem={(item, position) => <SuggestionComponent
                                 data={{item, position}}
+                                position={position}
                                 onPress={() => {
-                                    this.redirectToDetail()
+                                    this.redirectToDetail(item,'Suggestion')
                                 }}
                             />}
                             keyExtractor={(item, index) => index.toString()}

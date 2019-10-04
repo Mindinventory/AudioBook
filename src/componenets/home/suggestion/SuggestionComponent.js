@@ -5,7 +5,7 @@ import React from "react";
 import styles from "./styles";
 import PropTypes from "prop-types";
 import Ripple from "../../../helpers/Ripple";
-import {FluidNavigator, Transition} from 'react-navigation-fluid-transitions';
+import {Transition} from 'react-navigation-fluid-transitions';
 
 export const SuggestionComponent = (props) => {
     return (
@@ -52,14 +52,14 @@ export const SuggestionComponent = (props) => {
                 </View>
             </Ripple>
             <View style={styles.image}>
-                <Transition shared="logo">
+                <Transition
+                    shared={`imageSuggestion${props.data.item.index}`}>
                     <Image
                         resizeMode={'cover'}
                         source={props.data.item.item.photo}
                     />
                 </Transition>
             </View>
-
         </TouchableOpacity>
     )
 };

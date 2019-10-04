@@ -22,6 +22,9 @@ export default class SuggestionDetails extends React.Component {
     };
 
     render() {
+        const {item} = this.props.navigation.state.params.item
+        const {from} = this.props.navigation.state.params
+
         return (
             <SafeAreaView
                 style={styles.container}>
@@ -39,10 +42,10 @@ export default class SuggestionDetails extends React.Component {
                         <View
                             style={styles.scroll}>
                             <View  style={styles.image}>
-                                <Transition shared="logo">
+                                <Transition animated="scale" shared={ from === 'Trending'? `imageTrending${this.props.navigation.state.params.item.index}` : `imageSuggestion${this.props.navigation.state.params.item.index}`}>
                                     <Image
-                                        resizeMode={'cover'}
-                                        source={Icons.dummy1}
+                                        style={styles.image}
+                                        source={item.photo}
                                     />
                                 </Transition>
                             </View>
