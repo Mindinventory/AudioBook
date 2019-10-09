@@ -5,7 +5,8 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "android": "cd android && ./gradlew assembleRelease"
   },
   "dependencies": {
     "axios": "^0.19.0",

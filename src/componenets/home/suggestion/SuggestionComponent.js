@@ -26,10 +26,9 @@ export const SuggestionComponent = (props) => {
                 </Text>
                 <Text
                     style={styles.description}
-                    numberOfLines={4}>
+                    numberOfLines={3}>
                     {props.data.item.item.song_description}
                 </Text>
-
                 <View
                     style={styles.ratingContainer}>
                     <StarRating
@@ -55,7 +54,6 @@ export const SuggestionComponent = (props) => {
                 <Transition
                     shared={`imageSuggestion${props.data.item.index}`}>
                     <Image
-                        resizeMode={'cover'}
                         source={props.data.item.item.photo}
                     />
                 </Transition>
