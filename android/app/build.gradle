@@ -199,7 +199,6 @@ android {
 }
 
 dependencies {
-    implementation project(':react-native-shared-element')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
