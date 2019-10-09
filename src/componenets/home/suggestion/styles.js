@@ -16,21 +16,21 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: Colors.white,
         alignSelf: 'flex-start',
-        marginLeft: 20,
-        paddingRight: 10
+        paddingRight: 10,
+        marginLeft: 10
     },
     description: {
         fontSize: 16,
         color: Colors.white,
         alignSelf: 'flex-start',
-        marginLeft: 20,
-        paddingRight: 10
+        paddingRight: 10,
+        marginLeft: 10
     },
     ratingContainer: {
         flexDirection: 'row',
         alignSelf: 'flex-start',
         height: 26,
-        marginLeft: 20
+        marginLeft: 10
     },
     rating: {
         marginHorizontal: 2,
@@ -49,9 +49,9 @@ const styles = StyleSheet.create({
     },
     image: {
         position: 'absolute',
-        top: 0,
+        top: 10,
         width: '35%',
-        height: 190,
+        height: 180,
         left: 10,
         bottom: 10
     },

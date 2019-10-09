@@ -27,6 +27,8 @@ target 'MusicBook' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'RNSharedElement', :path => '../node_modules/react-native-shared-element'
+
   target 'MusicBookTests' do
     inherit! :search_paths
     # Pods for testing

@@ -9,6 +9,7 @@
 - React Navigation
 - Axios for web service.
 - Redux with Middleware thunk
+- Shared element animation
 - Custom Components
 
 ## Description
