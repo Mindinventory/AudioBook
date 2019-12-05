@@ -1,8 +1,7 @@
 # AudioBook UI
 
-| Home                        | Detail                      |
-| --------------------------- | --------------------------- |
-| ![image](/media/Home.jpg)   | ![image](/media/Details.jpg) | 
+![image](/media/audiobook.gif)
+
 
 ## What's in the AudioBook?
 - Managable React Native project structure
